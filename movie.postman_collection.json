@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "3cd6f986-f5a9-4bfd-b28d-d3e25fa95388",
+		"name": "movie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49266471",
+		"_collection_link": "https://gwweny29-9540312.postman.co/workspace/Monalisa's-Workspace~36af61e8-35bc-49ca-8ac9-e883cee09e05/collection/49266471-3cd6f986-f5a9-4bfd-b28d-d3e25fa95388?action=share&source=collection_link&creator=49266471"
+	},
+	"item": [
+		{
+			"name": "listMovie",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "updateMovie",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\": \"Aku\",\r\n    \"tahunRilis\": \"2005\",\r\n    \"sutradara\": \"Gwwen_y\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie/68fcea914654536dbfae3b19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie",
+						"68fcea914654536dbfae3b19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMovie",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/movie/68fcea914654536dbfae3b19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie",
+						"68fcea914654536dbfae3b19"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
