@@ -27,3 +27,10 @@ const MovieSchema = new mongoose.Schema(
 const MovieModel= mongoose.model("movies", MovieSchema);
 
 export default MovieModel;
+
+//npm init -y
+// npm install express
+// npm install mongoose
+// npm install -D nodemon
+// npm run dev
+// mongosh
