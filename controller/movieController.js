@@ -23,7 +23,7 @@ export const listMovie = async (req, res)=>{
 
 export const createMovie = async (req, res)=>{
     try {
-        const {judul, tahunRilis, sutradara } = req.body;
+        const {judul , tahunRilis, sutradara } = req.body;
 
         if(!judul || !tahunRilis || !sutradara){
             return res.status(400).json ({
@@ -47,7 +47,7 @@ export const createMovie = async (req, res)=>{
 export const updateMovie = async (req, res) => {
     try {
         const id = req.params?.id
-        const request = req.body
+        const { judul, tahunRilis, sutradara } = req.body
         if (!id) {
             return res.status(400).json({
                 message: "Id movie wajib di isi",
